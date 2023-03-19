@@ -1,10 +1,9 @@
-# SVG Icons system
+# SVG Icons system for React-Based App
 
-### [Demo](https://icon-system.serhiibilous.com/)
+### [Demo Site](https://icon-system.serhiibilous.com/)
+### [Orijinal Article](https://serhiibilous.medium.com/)
 
 ## Available Scripts
-
-In the project directory, you can run:
 
 ### `npm start`
 
