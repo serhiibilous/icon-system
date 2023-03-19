@@ -1,6 +1,6 @@
 # SVG Icons system
 
-### [Demo](https://icons-system.serhiibilous.com)
+### [Demo](https://icon-system.serhiibilous.com/)
 
 ## Available Scripts
 
