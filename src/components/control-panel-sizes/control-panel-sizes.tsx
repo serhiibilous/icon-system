@@ -26,7 +26,7 @@ export function ControlPanelSizes() {
         <RadioGroup.Label className="text-right block text-sm font-medium leading-6 text-gray-900">
           Choose Icon Size
         </RadioGroup.Label>
-        <div className="mt-2 flex gap-3">
+        <div className="mt-2 flex gap-3 flex-wrap w-28 justify-end p-0">
           {sizeOptions.map((option) => (
             <RadioGroup.Option
               key={option.name}
@@ -38,7 +38,7 @@ export function ControlPanelSizes() {
                   checked
                     ? 'bg-indigo-600 text-white hover:bg-indigo-500'
                     : 'ring-1 ring-inset ring-gray-300 bg-white text-gray-900 hover:bg-gray-50',
-                  'text-sm flex items-center justify-center rounded-md py-1 px-2 text-sm capitalize'
+                  'w-full text-sm flex items-center justify-center rounded-md py-1 px-2 text-sm capitalize'
                 )
               }
             >

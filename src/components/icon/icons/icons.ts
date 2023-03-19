@@ -5,7 +5,7 @@ import * as emojiIcons from './emoji'
 // All icons taken from https://www.iconfinder.com/ - free resource and can be used for commercial projects
 
 export const mainIcons = {
-  facebook: socialIcons.FacebookIcon,
+  medium: socialIcons.MediumIcon,
   linkedin: socialIcons.LinkedinIcon,
   github: socialIcons.GithubIcon,
   twitter: socialIcons.TwitterIcon,

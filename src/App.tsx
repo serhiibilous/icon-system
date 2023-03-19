@@ -4,6 +4,7 @@ import {
   ControlPanelColors,
   IconsContainer,
   ControlPanelSizes,
+  Social,
   IconSizes,
 } from '@components'
 
@@ -15,6 +16,7 @@ function App() {
     <ThemeContext.Provider value={{ theme, setTheme, iconSize, setIconSize }}>
       <ControlPanelColors />
       <ControlPanelSizes />
+      <Social />
       <div className="h-screen w-screen flex items-center justify-center">
         <IconsContainer />
       </div>

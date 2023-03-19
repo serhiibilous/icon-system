@@ -30,29 +30,30 @@ export function ControlPanelColors() {
         <RadioGroup.Label className="block text-sm font-medium leading-6 text-gray-900">
           Choose Theme color
         </RadioGroup.Label>
-        <div className="mt-2 flex items-center space-x-3">
+        <div className="mt-2 flex items-center space-y-2 flex-wrap w-12">
           {colors.map((color) => (
-            <RadioGroup.Option
-              key={color.name}
-              value={color}
-              className={({ active, checked }) =>
-                clsx(
-                  `ring-${color.name}-500`,
-                  active && checked ? 'ring-1' : '',
-                  !active && checked ? 'ring-1' : '',
-                  'relative -m-0.5 flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none'
-                )
-              }
-            >
-              <RadioGroup.Label as="span" className="sr-only">
-                {color.name}
-              </RadioGroup.Label>
-              <span
-                aria-hidden="true"
-                style={{ background: color.name }}
-                className={`h-8 w-8 rounded-full border border-black border-opacity-10 bg-${color.name}-500`}
-              />
-            </RadioGroup.Option>
+            <div key={color.name} className="'w-full">
+              <RadioGroup.Option
+                value={color}
+                className={({ active, checked }) =>
+                  clsx(
+                    `ring-${color.name}-500`,
+                    active && checked ? 'ring-1' : '',
+                    !active && checked ? 'ring-1' : '',
+                    'relative flex cursor-pointer items-center justify-center rounded-full p-0.5 focus:outline-none'
+                  )
+                }
+              >
+                <RadioGroup.Label as="span" className="sr-only">
+                  {color.name}
+                </RadioGroup.Label>
+                <span
+                  aria-hidden="true"
+                  style={{ background: color.name }}
+                  className={`h-8 w-8 rounded-full border border-black border-opacity-10 bg-${color.name}-500`}
+                />
+              </RadioGroup.Option>
+            </div>
           ))}
         </div>
       </RadioGroup>

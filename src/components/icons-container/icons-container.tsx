@@ -11,7 +11,7 @@ export function IconsContainer() {
   return (
     <div className="flex flex-wrap gap-y-6">
       <div className="flex gap-3 w-full justify-center">
-        <Icon name="facebook" size={themeContext?.iconSize} />
+        <Icon name="medium" size={themeContext?.iconSize} />
         <Icon name="linkedin" size={themeContext?.iconSize} />
         <Icon name="github" size={themeContext?.iconSize} />
         <Icon name="twitter" size={themeContext?.iconSize} />
